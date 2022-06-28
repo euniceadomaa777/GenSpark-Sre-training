@@ -1,0 +1,55 @@
+AWS can be accessed by creating an account and requires that you have credit card credentials to login.
+After successful login, you can have access to a free and limited resouce depending on the plan you have suscribed. though there are several cloud infrastructure, Amazon is the most secure, extensive and reliable cloud platform which offers over 200 fully featuredd services from data centers globally.
+it permits the use of different languages such as C++, Go, Java,JavaScript, .NET, Npde.js, PHP, Python and Ruby.
+
+AWS offers different services in various regions deppending on your location.For example, US East(N. Virginia) region- uses the code; us-east-1
+
+some services available in AWS include storage, Internet of Things, machine learning, Networking and content ddelivery, Migration and transfer etc.
+AWS storage helps to transform business by ensuring higher access to storage faster, securing, storage by ensuring security standards and compliance certifications, reducing expenditure on storage.
+Storage has the following options;
+
+*AWS Backup
+*EFS
+*AWS Elastic Disaster Recovery
+*FSx
+*S3
+*S3 Glacier
+*Storage Gateway
+
+Explanation of some services;
+
+1. AWS Storage Gateway is a hybrid cloud storage solution that helps customers overcome hybrid cloud storage challenges, and bridge the gap between their on-premises environments and the cloud. 
+Storage Gateway enables on-premises applications to use cloud storage by providing low-latency data access over standard storage protocols.
+charges are based on the type and amount of storage used.
+
+https://images.app.goo.gl/RkrKpLviPvwHesFn9  (Image showing Storage Gateway)
+
+2.Migration and transfer 
+Businesses and organisations can migrate any workload – applications, websites, databases, storage, physical or virtual servers – and even entire data centers from an on-premises environment,
+hosting facility, or other public cloud to AWS. It is a fast relaiableand highly automated. it migrate data such as oracle, sql and mysql.
+Free tier are products that are free to explore in a short term ,and for 12 months.Free tier products in the Migration and transfer services include;
+
+* AWS Migration Hub
+* AWS Application Discovery Service
+* AWS Application Migration Service
+* AWS Service Catalog
+* AWS Database Migration Service
+
+https://images.app.goo.gl/Gu6VrGBb1b3ZG8QF9 (image of showing Migration)
+
+
+Types of Support plan include;
+
+*Basic
+*Enterprise
+*Business
+*Developer
+
+
+
+
+
+
+
+
+
