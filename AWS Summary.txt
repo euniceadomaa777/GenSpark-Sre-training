@@ -44,5 +44,3 @@ Types of Support plan include;
 *Enterprise
 *Business
 *Developer
-
-
