@@ -1,0 +1,37 @@
+Day 2 Summary
+
+1. The AMAZON  vpc allows you provide a console interface that allows you to use vpc. It is a virtual network dedicated to AWS account. It is logically isolated from other virtual networks in the AWS Cloud. 
+VPC could be custom or default. various specifications such as IP address range for the VPC, subnets, gateways, and associate security groups. A subnet is a range of IP addresses in your VPC.
+
+Default VPC is a Virtual network which is automatically created for customer AWS account the very 1st time EC2 resources are provisioned. 
+On the other hand, custom is not automatically created when EC2 resources are provisioned and customer needs to create own VPC.
+Default VPC is automatically created by AWS system while customer/nondefault VPC needs to be manually configured by each customer and resources need to be provisioned.
+
+2.Types of Subnet
+ 
+Public subnet: The subnet traffic is routed to the public internet through an internet gateway or an egress-only internet gateway. 
+
+Private subnet: The subnet traffic can't reach the public internet through an internet gateway or egress-only internet gateway. Access to the public internet requires a NAT device.
+
+VPN-only subnet: The subnet traffic is routed to a Site-to-Site VPN connection through a virtual private gateway. The subnet traffic can't reach the public internet through an internet gateway.
+
+
+3. NAT Gateway 
+It is a Network Address Translation(NAT)service. It is used so that an instances in a private subnet can connect to services outside your VPC.
+It may be public or private. 
+
+public NAT gateway cand be created in a public subnet and must associate an elastic IP address with teh NAT Gateway at initial stage of creation.
+You route traffic from the NAT gateway to the internet gateway for the VPC. Alternatively, you can use a public NAT gateway to connect to other VPCs or your on-premises network. 
+In this case, you route traffic from the NAT gateway through a transit gateway or a virtual private gateway.
+
+private: Instances in private subnets can connect to other VPCs or your on-premises network through a private NAT gateway. You can route traffic from the NAT gateway through a transit gateway or a virtual private gateway
+You cannot associate an elastic IP address with a private NAT gateway. You can attach an internet gateway to a VPC with a private NAT gateway,however, the Internet gateway drops traffic if you toute traffic from the private NAT Gateway to the internet gateway.
+
+
+4. Difference between Network ACL and Security
+
+i. The main difference between Network ACL and Security is that Security groups are tied to an instance whereas Network ACLs are tied to the subnet.
+
+ii. Security group supports allow rules only e.g. You cannot deny a certain IP address from establishing a connection whereas Network ACL supports allow and deny rules.
+
+iii. Security groups evaluate all the rules in them before allowing a traffic whereas NACLs do it in the number order, from top to bottom.
