@@ -1,0 +1,139 @@
+Exit ticket: Hi Sharma, I would love it much if lessons can tackled systematically  with procedures taught in step by step pace,  and a bit slow in a good pace so that we can get concepts clear. It goes too quickly and everything seemed compressed and rushed in a very short while.
+
+
+*****
+Benefits of DevOps
+
+*Speed
+Move at high velocity so you can innovate for customers faster, adapt to changing markets better, and grow more efficient at driving business results. The DevOps model enables your developers and operations teams to achieve these results. For example, microservices and continuous delivery let teams take ownership of services and then release updates to them quicker.
+
+*Rapid Delivery
+Increase the frequency and pace of releases so you can innovate and improve your product faster. The quicker you can release new features and fix bugs, the faster you can respond to your customers’ needs and build competitive advantage. Continuous integration and continuous delivery are practices that automate the software release process, from build to deploy.
+
+*What-is_reliability
+Reliability Ensure the quality of application updates and infrastructure changes so you can reliably deliver at a more rapid pace while maintaining a positive experience for end users. Use practices like continuous integration and continuous delivery to test that each change is functional and safe. Monitoring and logging practices help you stay informed of performance in real-time.
+
+*DevOps-What-is_scale
+Operate and manage your infrastructure and development processes at scale. Automation and consistency help you manage complex or changing systems efficiently and with reduced risk. For example, infrastructure as code helps you manage your development, testing, and production environments in a repeatable and more efficient manner.
+
+*Improved Collaboration
+Build more effective teams under a DevOps cultural model, which emphasizes values such as ownership and accountability. Developers and operations teams collaborate closely, share many responsibilities, and combine their workflows. This reduces inefficiencies and saves time (e.g. reduced handover periods between developers and operations, writing code that takes into account the environment in which it is run).
+
+*Security
+Move quickly while retaining control and preserving compliance. You can adopt a DevOps model without sacrificing security by using automated compliance policies, fine-grained controls, and configuration management techniques. For example, using infra
+
+***What do DevOps actually do?
+DevOps engineers manage the operations of software development, implementing engineering tools and knowledge of the software development process to streamline software updates and creation.
+
+**DIFFERENCE B/W SRE AND DevOps
+SRE vs DevOps – how are they different? Simply speaking, DevOps is for writing and deploying code. 
+SRE, on the other hand, is more comprehensive, with the team taking a wider 'end-user's' perspective while working on the system. 
+A DevOps team works on a product or app using an agile approach.
+
+
+** AWS IAM- 	Identity Access Management
+An IAM user is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS. A primary use for IAM users is to give people the ability to sign in to the AWS Management Console for interactive tasks and to make programmatic requests to AWS services using the API or CLI.
+A user in AWS consists of a name, a password to sign into the AWS Management Console, and up to two access keys that can be used with the API or CLI. When you create an IAM user, you grant it permissions by making it a member of a user group that has appropriate permission policies attached (recommended),
+or by directly attaching policies to the user. You can also clone the permissions of an existing IAM user, which automatically makes the new user a member of the same user groups and attaches all the same policies
+
+** IAM User groups
+An IAM user group is a collection of IAM users. You can use user groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users. 
+For example, you could have a user group called Admins and give that user group the types of permissions that administrators typically need. 
+Any user in that user group automatically has the permissions that are assigned to the user group.
+
+**IAM roles
+An IAM role is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. 
+However, a role does not have any credentials (password or access keys) associated with it. 
+Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it
+
+***A principal is a person or application that can make a request for an action or operation on an AWS resource. The principal is authenticated as the AWS account root user 
+or an IAM entity to make requests to AWS. As a best practice, do not use your root user credentials for your daily work.
+
+** Temporary credentials in IAM 
+1. Expire after a period of time set by a user
+2. allows to give restricted permissions.
+
+VPC (vIRTUAL PRIVATE CLOUD)
+It enables you to launch AWS reso. into a virtual network that u've definded.A VPC is a virtual network that is logically isolated from other virtual networks in the AWS Cloud. Amazon VPC lets you launch AWS resources, such as an Amazon RDS DB instance or Amazon EC2 instance, into a VPC. 
+The VPC can either be a default VPC that comes with your account or one that you create. Your default VPC has three subnets you can use to isolate resources inside the VPC. The default VPC
+also has an internet gateway that can be used to provide access to resources inside the VPC from outside the VPC.
+
+
+**A subnet is a range of IP addresses in your VPC. You launch AWS resources, such as Amazon EC2 instances, into your subnets. You can connect a subnet to the internet, other VPCs, and your own data centers, and route traffic to and from your subnets using route tables.
+
+
+EC2
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. 
+Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. 
+It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment
+create an instance by clicking Launch Instance. EC2 allows you to create virtual machines, or instances, that run on the AWS Cloud, it simply a sever.
+
+
+** AWS Ground Station
+AWS Ground Station is a fully managed service that enables you to control satellite communications, process satellite data, and scale your satellite operations. This means that you no longer have to build or manage your own ground station infrastructure.
+AWS Ground Station enables you to focus on innovating and rapidly experimenting with new applications that ingest satellite data and dynamically scale your server and storage use, rather than spend resources on operating and maintaining your own ground stations.
+
+** Amazon s3
+
+Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can store and protect any amount of data for virtually any use case,
+such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, 
+you can optimize costs, organize data, and configure fine-tuned access controls to Organisational roles.
+
+*** Rules for naming Amazon S3 access points
+Access point names must meet the following conditions:
+
+Must be unique within a single AWS account and Region
+
+Must comply with DNS naming restrictions
+
+Must begin with a number or lowercase letter
+
+Must be between 3 and 50 characters long
+
+Can't begin or end with a dash
+
+Can't contain underscores, uppercase letters, or periods
+
+By default, you can create up to 1,000 access points per Region for each of your AWS accounts. If you need more than 1,000 access points for a single
+account in a single Region, you can request a service quota increase
+
+****AWS AMI(Amazon Machine Image)
+AMI is a template that contains the software configuration(operating system, application server, and applications) required to launch your instance. 
+
+
+
+
+ec2-windows assword:
+lX%5*&hMB5.CEK4VY*8%G6efDV9$C7EK
+
+Day4:
+
+Create a simple web server on ec2 machine and ensure it is running on Public Subnet.
+Create a RDS DB instance and ensure it is created under Private subnet
+Establish the connectivity btw this two services
+
+Master key copied from Rdb:
+*******
+
+procedure:   REF; https://www.youtube.com/watch?v=L5ynrQ9_bPI
+ Create an instance DB
+
+1. Nivagate to AWS RDB, Select Database
+2. give a unique name to the DB
+3. Use admin as"Master username" 
+4. Do not auto generate password but select Master password to input your own password and reconfirm it.
+5. Go to DB Instance class
+6 select a general purpose storage;
+7. choose connectivity  andsubnet group shd be default
+8. VOC Security group shd create new and give it a name
+9. DB parametergroup should be default
+10. disnable automated backups and indicate the number of days for Backup retention
+11. disable monitoring and enenable maintenance
+give a db port nd create db  to get db created
+
+
+Secondly, create a EC2 Instance
+
+
+
+create a EC2 Instance

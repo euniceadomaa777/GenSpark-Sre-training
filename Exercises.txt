@@ -1,0 +1,16 @@
+Dayo1: 27/06/2022
+Create a summary on AWS Introduction
+
+
+Day 02: 28/06/2022
+1. create summary on IAM & VPC
+
+2. Create an IAM user "iamsre" and force MFA to the user.
+Generate Access key and secrete key post the user is created.
+Give limited developer access and add him to Developer group 
+Create another IAM user "iamdevops" add him to DevOps group and give him admin permission to core aws services by using custom policy template
+Create user "iamtester" and "iamdb" amd add them to group name called Team.. Ensure the group Team is created with full DB and Compute permission
+
+
+Day 03: 29/06/2022
+1. Launch Amazon EC2 Instances and use key pairs for SSH authentication to log into your instance and create a web page and publish it. Once it is published it should be accessible from internet so you can to set your security groups accordingly
