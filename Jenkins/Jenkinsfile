@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    stages{
+        stage ("build"){
+            steps {
+                sh "echo 'building the project' "
+                sh 'pip install flask'
+     }
+
+        }
+
+    stage ("test"){
+            steps {
+                sh "echo 'testing the project' "
+                sh "python test.py"
+
+            }
+        }
+
+     stage ("run"){
+            steps {
+                sh "echo 'running the project' "
+                sh "python  app.py"
+            }
+        }   
+    
+    }
+
+}
