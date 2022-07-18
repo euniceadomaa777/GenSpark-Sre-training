@@ -1,6 +1,31 @@
 pipeline{
     agent any
     stages{
+        stage ("navigate to Q3 dir"){
+            steps{
+                dir('assignment-3/Q3')
+            }
+
+        }
+
+        stage("deploy infrastructure"){
+            steps{
+                 dir('terraform')
+                 sh "terraform init"
+                 sh "terraform validate"
+                 sh "terraform plan"
+                 sh "terraform apply"
+            }
+        }
+
+        stage ("navigate to Q3 root dir"){
+            steps{
+                dir("..\\")
+                
+            }
+
+        }
+        
         stage ("build"){
             steps {
                 sh "echo 'building the project' "
