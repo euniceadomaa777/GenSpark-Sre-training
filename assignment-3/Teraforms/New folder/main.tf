@@ -55,7 +55,7 @@ Name = "city-serve"
 }*/
 
 #declaring aws_route_table and aws_route_table_association resources
-resource "aws_route_table" "vpc_sre_public_tbl" {                            #give the resource(aws_route_table) and add a name(any) to the resource
+resource "aws_route_table" "vpc_sre_public_tbl" {                            #give the resource(aws_route_table) and add a name(any) of the resource
 vpc_id = aws_vpc.vpc_sre.id
 
 route {
@@ -82,8 +82,7 @@ route_table_id = aws_route_table.vpc_sre_public_tbl.id
   
 }
 #add Security Group by adding aws_security_group resource
-/* we’re allowing incoming SSH connections (22/tcp) from any addresses (0.0.0.0/0) inside the Security Group, 
-and also we’re allowing any connection initiation to the outside world from the Security Group. 
+/* we’re allowing incoming SSH connections (22/tcp) from any addresses (0.0.0.0/0) inside the Security Group, and also we’re allowing any connection initiation to the outside world from the Security Group. 
 So, we’ll be able to SSH to the instance protected by this Security Group and make any connections from it.*/
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh_sg"
@@ -193,25 +192,25 @@ resource "aws_eks_cluster" "sre_cluster" {
   ]
 }
 
-# resource for creating IAM role policy attachment which is Amazon EC2 container
+#rsource for
 resource "aws_iam_role_policy_attachment" "sre-role-AmazonEC2ContainerRegistryReadOnly" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
   role       = aws_iam_role.IAM_role.name
 }
 
-#rsource for worker node policy
+#rsource for
 resource "aws_iam_role_policy_attachment" "sre-role-AmazonEKSWorkerNodePolicy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
   role       = aws_iam_role.IAM_role.name
 }
 
-#resource for CNI policy on AmazonEkS
+#rsource for
 resource "aws_iam_role_policy_attachment" "sre-role-AmazonEKS_CNI_Policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
   role       = aws_iam_role.IAM_role.name
 }
 
-  # resource for nodegroup
+  
 resource "aws_eks_node_group" "sre-nodegroup" {
   cluster_name = aws_eks_cluster.sre_cluster.name
   node_group_name = "sre_nodegroup"
@@ -230,7 +229,7 @@ resource "aws_eks_node_group" "sre-nodegroup" {
   disk_size = 20
   
 
-# resource for
+
   remote_access {
     ec2_ssh_key = "city-keypair"
     source_security_group_ids = [ aws_security_group.allow_ssh.id ]
