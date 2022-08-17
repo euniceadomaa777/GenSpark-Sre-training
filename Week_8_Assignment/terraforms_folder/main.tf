@@ -18,7 +18,7 @@ resource  "aws_internet_gateway" "splunk_vpc_igw" {
 
 
 # Create a Public Subnet
-resource "aws_subnet" "splunk_subnet_1" {                             #create a Subnet resource
+resource "aws_subnet" "splunk_subnet_1" {                            
     vpc_id = aws_vpc.splunk_vpc.id
     cidr_block = "10.0.0.0/24"
     map_public_ip_on_launch = true
@@ -56,13 +56,13 @@ resource "aws_route_table" "pubic_rt"{
 
 
 # Create a Route
-resource "aws_route_table_association" "splunk_rt_tbl_assoc_1" {              # creating aws_route_table_association resource & gave it the name "my_vpc_us_west1_public"
+resource "aws_route_table_association" "splunk_rt_tbl_assoc_1" {              
 subnet_id = aws_subnet.splunk_subnet_1.id
 route_table_id = aws_route_table.pubic_rt.id
 }
 
 
-resource "aws_route_table_association" "splunk_rt_tbl_assoc_2" {              # creating aws_route_table_association resource & gave it the name "my_vpc_us_west1_public"
+resource "aws_route_table_association" "splunk_rt_tbl_assoc_2" {              
 subnet_id = aws_subnet.splunk_subnet_2.id
 route_table_id = aws_route_table.pubic_rt.id
 }
