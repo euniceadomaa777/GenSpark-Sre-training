@@ -1,0 +1,25 @@
+**** How to Create a RDB(Amazon Relational Database)*****
+
+1. Nivagate to AWS RDB, Select Database.
+2. give a unique name to the DB.
+3. Use admin as"Master username". 
+4. Do not auto generate password but select Master password to input your own password and reconfirm it.
+5. Go to DB Instance class.
+6  select a general purpose storage.
+7. choose connectivity  andsubnet group shd be default.
+8. VOC Security group shd create new and give it a name.
+9. DB parametergroup should be default.
+10. disnable automated backups and indicate the number of days for Backup retention.
+11. disable monitoring and enenable maintenance.
+12. give a db port nd create db  to get db created.
+
+
+Secondly, create a EC2 Instance
+Navigate to EC2 and select Instance
+click Launch instance
+on the AMI page, choose Amazon Linux 2 AMI or any other operating system option you like
+click Configure Instance Details
+next created Security group that allows connection through ssh on port 22 and added EC2 instance's
+IP address.
+
+I tested with MySQL workbench using ssh connection but was getting timeout errors.
