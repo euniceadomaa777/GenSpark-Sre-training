@@ -1,1 +1,1 @@
-GenSpare Training Repository
+GenSpark Training Repository
